@@ -1,6 +1,6 @@
 {
     "name": "arana-fire-agreement",
-    "storage": "/Users/rafael.arana@databricks.com/DLT/finreg",
+    "storage": "/Users/rafael.arana@databricks.com/fire/agreement",
     "configuration": {
         "pipelines.useV2DetailsPage": "true",
         "fire_entity": "agreement",

@@ -1,9 +1,9 @@
 {
     "name": "arana-fire-collateral",
-    "storage": "/Users/rafael.arana@databricks.com/DLT/finreg",
+    "storage": "/Users/rafael.arana@databricks.com/DLT/fire/collateral",
     "configuration": {
         "pipelines.useV2DetailsPage": "true",
-        "fire_entity": "agreement",
+        "fire_entity": "collateral",
         "landing_zone": "/FileStore/legend/raw/collateral",
         "invalid_format_path": "/FileStore/legend/invalid/collateral",
         "file_format": "json",

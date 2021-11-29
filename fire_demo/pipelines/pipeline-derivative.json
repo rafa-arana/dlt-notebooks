@@ -1,6 +1,6 @@
 {
     "name": "arana-fire-derivative",
-    "storage": "/Users/rafael.arana@databricks.com/DLT/finreg",
+    "storage": "/Users/rafael.arana@databricks.com/fire/derivative",
     "configuration": {
         "pipelines.useV2DetailsPage": "true",
         "fire_entity": "derivative",

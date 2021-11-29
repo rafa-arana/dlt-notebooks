@@ -1,5 +1,16 @@
 # Databricks notebook source
-# MAGIC %pip install git+https://github.com/aamend/fire.git
+# MAGIC %md
+# MAGIC ---
+# MAGIC + <a href="$./00.Fire Setup">STAGE 0</a>: Setup
+# MAGIC + <a href="$./01.FIRE_Pipeline_Template">STAGE 1</a>: ETL Pipeline Template
+# MAGIC + <a href="$./02.FIRE_Pipeline_Controls">STAGE 2</a>: Pipeline Controls
+# MAGIC + <a href="$./02.UDFs_Expectations">STAGE 2</a>: Custom data quality checks with UDFs
+# MAGIC 
+# MAGIC ---
+
+# COMMAND ----------
+
+# MAGIC %pip install git+https://github.com/rafa-arana/fire.git
 
 # COMMAND ----------
 
@@ -112,3 +123,14 @@ def quarantine():
         .withColumn("_fire", failed_expectations("_fire"))
         .filter(size("_fire") > 0)
   )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ---
+# MAGIC + <a href="$./00.Fire Setup">STAGE 0</a>: Setup
+# MAGIC + <a href="$./01.FIRE_Pipeline_Template">STAGE 1</a>: ETL Pipeline Template
+# MAGIC + <a href="$./02.FIRE_Pipeline_Controls">STAGE 2</a>: Pipeline Controls
+# MAGIC + <a href="$./02.UDFs_Expectations">STAGE 2</a>: Custom data quality checks with UDFs
+# MAGIC 
+# MAGIC ---
