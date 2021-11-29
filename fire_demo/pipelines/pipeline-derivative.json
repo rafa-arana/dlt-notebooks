@@ -1,0 +1,36 @@
+{
+    "name": "arana-fire-derivative",
+    "storage": "/Users/rafael.arana@databricks.com/DLT/finreg",
+    "configuration": {
+        "pipelines.useV2DetailsPage": "true",
+        "fire_entity": "derivative",
+        "landing_zone": "/FileStore/legend/raw/derivative",
+        "invalid_format_path": "/FileStore/legend/invalid/derivative",
+        "file_format": "json",
+        "max_files": "1"
+    },
+    "clusters": [
+        {
+            "label": "default",
+            "autoscale": {
+                "min_workers": 1,
+                "max_workers": 5
+            }
+        }
+    ],
+    "libraries": [
+        {
+            "notebook": {
+                "path": "/Repos/rafael.arana@databricks.com/dlt-notebooks/fire_demo/01.FIRE_Pipeline_Template"
+            }
+        },
+        {
+            "notebook": {
+                "path": "/Repos/rafael.arana@databricks.com/dlt-notebooks/fire_demo/02.FIRE_Pipeline_Controls"
+            }
+        }
+    ],
+    "target": "arana_fire",
+    "continuous": false,
+    "development": true
+}
